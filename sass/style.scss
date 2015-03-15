@@ -89,8 +89,8 @@ textarea {
 @import "typography";
 @import "normalize-opentype";
 @import "mixins";
+@import "base";
 // @import "animations";
-// @import "base";
 // @import "buttons";
 // @import "icons";
 // @import "layout";
@@ -133,6 +133,32 @@ html {
 }
 
 @include links($linkcolor);
+
+/* Cancels out Firefox Mobile's gradient background */
+button {
+  background-image: none;
+}
+
+// img
+
+img {
+  border-width: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+  height: auto;
+}
+
+.banner {
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+figure {
+  margin: 1em;
+}
 
 /* ==========================================================================
    Helper classes
