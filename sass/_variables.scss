@@ -1,0 +1,26 @@
+// Variables
+
+$black: #333;
+$white: #fff;
+$grey: #999;
+
+$bodycolor: $white;
+$textcolor: $black;
+
+// Typography
+
+$font-family-sans-serif: "adelle-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+$font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
+
+// Colour
+
+$primaryColor:#000;
+$secondaryColor:#fff;
+
+// Links
+
+$linkcolor: rgb(1,53,104);
+$linkcolorhover: darken($linkcolor, 10);
+$linkcolorvisited: darken($linkcolorhover, 10);
+$linkcolorfocus: $linkcolorhover;

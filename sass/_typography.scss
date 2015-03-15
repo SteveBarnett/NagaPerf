@@ -1,0 +1,164 @@
+// good measure: 45 to 75 characters
+// 1em is about 2 characters, so use 22 to 38ems
+
+html {
+  font-family: $font-family-sans-serif;
+}
+
+p {
+  margin-bottom: 0
+}
+
+p, table {
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+p {
+  font-variant-numeric: old style-nums proportional-nums;
+}
+
+
+@media only screen and (min-width: 38em) {
+   p, table {
+     hyphens:none;
+    }
+}
+
+// Consider using columns for larger screens
+// @media only screen and (min-width: 66em) {
+//   column-count:2;
+//   column-gap: 1.5em;
+// }
+
+p {
+     font-variant-numeric: old style-nums proportional-nums;
+}
+
+blockquote {
+  margin: 1.5em;
+}
+
+
+// --------------------------------------------------------------------------------------
+// A More Modern Scale for Web Typography
+// Based on this article: http://typecast.com/blog/a-more-modern-scale-for-web-typography
+// --------------------------------------------------------------------------------------
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+/* Body Content */
+
+html {
+  font-size: 1em;
+  line-height: 1.25;
+}
+
+@media (min-width: 43.75em) {
+  html {
+    font-size: 1em;
+    line-height: 1.375;
+  }
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.25;
+  @media (min-width: 43.75em) {
+    font-size: 2.5em;
+    line-height: 1.125;
+  }
+  @media (min-width: 56.25em) {
+    font-size: 3em;
+    line-height: 1.05;
+  }
+}
+
+h2 {
+  font-size: 1.625em;
+  line-height: 1.15384615;
+  @media (min-width: 43.75em) {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+  @media (min-width: 56.25em) {
+    font-size: 2.25em;
+    line-height: 1.25;
+  }
+}
+
+h3 {
+  font-size: 1.375em;
+  line-height: 1.13636364;
+  @media (min-width: 43.75em) {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+  @media (min-width: 56.25em) {
+    font-size: 1.75em;
+    line-height: 1.25;
+  }
+}
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.11111111;
+  @media (min-width: 43.75em) {
+    line-height: 1.22222222;
+  }
+}
+
+blockquote {
+  font-size: 1.25em;
+  line-height: 1.25;
+  @media (min-width: 43.75em) {
+    font-size: 1.5em;
+    line-height: 1.45833333;
+  }
+}
+
+
+// web font loading classes
+
+// .wf-loading
+// .wf-active
+// .wf-inactive
+
+// text helper classes
+
+.uc {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.tac {
+  text-align: center;
+}
+
+.tar {
+  text-align: right;
+}
+
+.tal {
+  text-align: left;
+}
+
+.no-bull {
+  list-style: none;
+}
+
+// show IDs for content
+
+main [id]:hover::after {
+  display: inline;
+  content: ' #' attr(id);
+  color: lighten($black, 30%);
+}
