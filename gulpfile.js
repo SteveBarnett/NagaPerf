@@ -17,7 +17,7 @@ gulp.task('serve', ['sass'], function() {
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
     return gulp.src("./sass/*.scss")
-        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(sass({outputStyle: "compressed"}))
         .pipe(gulp.dest("./css"))
         .pipe(reload({stream: true}));
 });
