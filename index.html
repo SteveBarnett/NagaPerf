@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+        <!-- touch-icon.png 512x512px PNG 8-BIT with no transparency -->
+        <link rel="shortcut icon" href="touch-icon.png">
+        <link rel="apple-touch-icon-precomposed" href="touch-icon.png">
+
+        <!-- Place any (small!) inline JS here, above the CSS. -->
+        <!-- https://www.igvita.com/2014/05/20/script-injected-async-scripts-considered-harmful/ -->
+
+        <!-- Small bit of CSS here, rest in external?  -->
+        <!-- https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery -->
+
+        <link rel="stylesheet" href="stylesheets/style.css" />
+        <!--[if (lt IE 9)&(!IEMobile)]><link rel="stylesheet" href="stylesheets/ie.css" /> <![endif]-->
+        <!-- <link rel="dns-prefetch" href="//example.com" /> -->
+
+        <script src="js/modernizr.custom.min.js"></script>
+        <!-- If small, include inline instead? -->
+    </head>
+    <body>
+      <a href="#main" id="top" class="visuallyhidden">Skip to main content</a>
+
+      <header role="banner" id="header">
+
+      </header>
+
+      <a id="jump" href="#nav">Menu</a>
+
+      <main role="main" id="main" class="main" tabindex="-1">
+
+        <h1>Level one heading</h1>
+        <h2>Level two heading</h2>
+        <h3>Level three heading</h3>
+        <h4>Level four heading</h4>
+        <h5>Level five heading</h5>
+        <h6>Level six heading</h6>
+
+        <p>This is a paragraph of text. Some of the text may be <em>emphasised</em> and some it might even be <strong>strongly emphasised</strong>. Occasionally <q>quoted text</q> may be found within a paragraph &hellip;and of course <a href="#">a link</a> may appear at any point in the text. The average paragraph contains five or six sentences although some may contain as little or one or two while others carry on for anything up to ten sentences and beyond. <abbr title="HyperText Markup Language">HTML</abbr> is an example of an abbreviation.</p>
+
+        <blockquote>
+        <p>This text is quoted. A block of quoted text like this is particularly useful when pre sented as a pull-quote within an article of text.</p>
+        </blockquote>
+
+        <code>
+            &lt;html class="no-js"&gt;
+        </code>
+
+        <p>pre-formatted text</p>
+
+        <pre>
+        ! " # $ % &amp; ' ( ) * + , - . /
+        0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+        @ A B C D E F G H I J K L M N O
+        P Q R S T U V W X Y Z [ \ ] ^ _
+        ` a b c d e f g h i j k l m n o
+        p q r s t u v w x y z { | } ~
+        </pre>
+
+        <!-- https://github.com/scottjehl/picturefill -->
+
+        <!-- Best for general use -->
+        <img sizes="(min-width: 40em) 80vw, 100vw"
+srcset="examples/images/medium.jpg 375w, examples/images/medium.jpg 480w, examples/images/large.jpg 768w" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+
+        <!-- Best for art-direction use case -->
+        <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="img/large.webp" media="(min-width: 800px)" type="image/webp">
+            <source srcset="img/large.jpg" media="(min-width: 800px)">
+            <source srcset="img/medium.jpg" media="(min-width: 400px)">
+            <!--[if IE 9]></video><![endif]-->
+            <img srcset="img/small.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+        </picture>
+
+      </main>
+
+      <footer role="contentinfo" id="footer">
+        <nav role="navigation" id="nav">
+          <ul>
+            <li><a href="#">Navigation item link</a></li>
+            <li class="active"><a href="#" aria-describedby="current">Active navigation item link</a></li>
+          </ul>
+        <div class="hidden" id="current">current page</div>
+        </nav>
+      </footer>
+
+    <script src="js/main.min.js" async></script>
+    <!-- Includes all scripts in js, except modernizr -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!--
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    -->
+    </body>
+</html>
