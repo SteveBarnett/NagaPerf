@@ -88,6 +88,7 @@ textarea {
 @import "normalize";
 @import "typography";
 @import "normalize-opentype";
+@import "mixins";
 // @import "animations";
 // @import "base";
 // @import "buttons";
@@ -131,10 +132,7 @@ html {
   outline: none;
 }
 
-
-
-
-
+@include links($linkcolor);
 
 /* ==========================================================================
    Helper classes
