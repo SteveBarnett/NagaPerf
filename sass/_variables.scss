@@ -15,10 +15,9 @@ $font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
 
 // Colour
 
-$primaryColor:#000;
-$secondaryColor:#fff;
-$highlight: #6D0808; // dark red
+$primaryColor: #6D0808; // dark red
+$secondaryColor: #B27070; // very light red grey
 
 // Links
 
-$linkcolor: rgb(41, 128, 185);
+$linkcolor: lighten($primaryColor, 10%);

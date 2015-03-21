@@ -1,0 +1,49 @@
+html {
+  border-top: solid 6px $primaryColor;
+}
+
+[role="banner"], [role="contentinfo"] {
+  background-color: lighten($secondaryColor, 35%);
+}
+
+.home {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.list-inline {
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+  }
+}
+
+[role="navigation"] {
+  background-color: $primaryColor;
+  color: #fff;
+  @include links(#fff);
+}
+
+.h-entry p:last-child:after {
+  content: "";
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  background: $secondaryColor;
+  position: relative;
+  left: 0.25em;
+}
+
+[role="complementary"] {
+  background-color: lighten($secondaryColor, 35%);
+}
+
+.vcard {
+  .fn, .org {
+    display: none;
+  }
+  .u-email, .tel, .linkedin, .twitter {
+    display: block;
+  }
+}
